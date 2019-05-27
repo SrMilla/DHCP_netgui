@@ -1,0 +1,25 @@
+<nodes>
+position(70.0,160.0); NKCompaq("pc1")
+position(447.0,166.0); NKCompaq("servidor-DHCP")
+position(239.0,325.0); NKCompaq("servidor-DNS")
+position(220.0,57.0); NKRouter("gateway")
+position(208.0,161.0); NKHub("hub1")
+<\nodes>
+<connections>
+<link>
+Connect("hub1")
+To("gateway")
+<\link>
+<link>
+Connect("hub1")
+To("pc1")
+<\link>
+<link>
+Connect("hub1")
+To("servidor-DNS")
+<\link>
+<link>
+Connect("hub1")
+To("servidor-DHCP")
+<\link>
+<\connections>
